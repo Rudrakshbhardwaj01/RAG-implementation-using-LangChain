@@ -1,6 +1,6 @@
 # RAG-Based PDF Workflows
 
-Welcome! This repository features **two distinct Python workflows** for working with PDFs using Retrieval-Augmented Generation (RAG) and local LLMs. Both run entirely on your machine—**no API tokensb required**. You provide your own PDFs, and each PDF gets its own vector store for efficient processing.
+Welcome! This repository features **two distinct Python workflows** for working with PDFs using Retrieval-Augmented Generation (RAG) and local LLMs. Both run entirely on your machine—**no API tokens required**. You provide your own PDFs, and each PDF gets its own vector store for efficient processing.
 
 ---
 
