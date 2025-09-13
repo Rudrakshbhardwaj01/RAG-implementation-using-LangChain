@@ -5,7 +5,7 @@ from langchain_community.vectorstores import Chroma
 from langchain.prompts import PromptTemplate
 
 # Load PDF
-loader = PyPDFLoader("Microsoft-Azure.pdf")
+loader = PyPDFLoader("YOUR-PDF'S-PATH")
 docs = loader.load()
 
 # Split text
@@ -19,7 +19,7 @@ split_docs = text_splitter.split_documents(docs)
 embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
 # Vector store
-vectorstore = Chroma.from_documents(split_docs, embedding, persist_directory="azure_db")
+vectorstore = Chroma.from_documents(split_docs, embedding, persist_directory="DB-NAME")
 from langchain.prompts import PromptTemplate
 
 prompt_template = PromptTemplate(
@@ -61,3 +61,4 @@ answer = llm.invoke(final_prompt)
 
 print("\nAnswer:")
 print(answer)
+
